@@ -3,9 +3,11 @@
 #include <unistd.h>
 #include <wiringPi.h>
 
+// NOTE: Change the Pin below (22) to match the pin you are connected to >>> See RPi GPIO Pinout chart
 // pin 11 = wiringPi Pin 0. Use this for motor direction.
 const int dirPin = 22;
 
+// NOTE: Change the Pin below (26) to match the pin you are connected to >>> See RPi GPIO Pinout chart
 // pin 12 supports pwm mode but it turns out I didn't need pwm mode in the end!
 // pin 12 = wiringPi Pin 1. Use this for stepper motor.
 const int stepPin = 26;
