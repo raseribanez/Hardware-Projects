@@ -1,0 +1,1 @@
+ gcc -o floppymusic -std=c99 -lwiringPi floppymusic.c
