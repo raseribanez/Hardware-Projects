@@ -1,9 +1,11 @@
 # Ben Woodfield
-# Pin De-Activate - quick script
+# Pin De-Activation - quick script
+# Use this to turn OFF GPIO pins
 
 import RPi.GPIO
 import time
 
+# Change the Pin numbers accordingly for your requirements
 RPi.GPIO.setmode(RPi.GPIO.BCM)
 RPi.GPIO.setup(23, RPi.GPIO.OUT)
 RPi.GPIO.setup(4, RPi.GPIO.OUT)
