@@ -5,13 +5,13 @@
 import RPi.GPIO
 import time
 
-# Here I am activating use of 2 pins.
-# Pin 23 is my main hardware
-# Pin 4 is my LED indicator
+# Here I am activating 2 pins for OUTPUT use.
+# GPIO 0 and GPIO 1
 RPi.GPIO.setmode(RPi.GPIO.BCM)
 RPi.GPIO.setup(0, RPi.GPIO.OUT)
 RPi.GPIO.setup(1, RPi.GPIO.OUT)
 
+# Change time.sleep() to your preferred blink rate
 while True:
     RPi.GPIO.output(0, True)
     RPi.GPIO.output(1, False)
